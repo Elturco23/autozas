@@ -1,41 +1,33 @@
 import React from 'react';
 import {NavDropdown,Navbar,Container, Nav,Form,FormControl,Button} from 'react-bootstrap' ;
+import './navbar.css'
+import logo from '../../../img/contorno.png'
 function navbar() {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar className='container-navbar' expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+    <Navbar.Brand href="#"><img src={logo} height='87px'/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
-        className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px' }}
+        className=""
+        style={{ maxHeight: '100px',width:'40%' }}
         navbarScroll
       >
-        <Nav.Link href="#action1">Home</Nav.Link>
-        <Nav.Link href="#action2">Link</Nav.Link>
-        <NavDropdown title="Link" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-            Something else here
-          </NavDropdown.Item>
-        </NavDropdown>
-        <Nav.Link href="#" disabled>
-          Link
+        <Nav.Link href="#action1"><i class='fa fa-home'></i>Inicio</Nav.Link>
+        <Nav.Link href="#action2"><i class='fas fa-toolbox'></i>Talleres</Nav.Link>
+        
+        
+        <Nav.Link href="#" >
+          
+        
+<i class='fa fa-phone-square'></i>Contactenos
         </Nav.Link>
+        <Nav.Link href="#action2">
+<i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
       </Nav>
-      <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Search</Button>
-      </Form>
+     
     </Navbar.Collapse>
   </Container>
 </Navbar>
