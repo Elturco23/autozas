@@ -1,18 +1,49 @@
-.container-navbar{
-    background-color: green;
-}
-#navbarScroll{
-    justify-content: flex-end;
-    
-    
-}
-#navbarScroll a{
-    color: white;
+@media (min-width: 700px) and (orientation: landscape) { 
+   /* —- Aquí van todos los estilos CSS*/ 
+    .container-navbar{
+        background-color: green;
+    }
+    #navbarScroll{
+        justify-content: flex-end;
+        
+        
+    }
+    #navbarScroll a{
+        color: white;
+       
+        margin-right: 5%;
+        width: max-content;
    
-    margin-right: 5%;
-    width: max-content;
+    }
+    .navbar-brand img {
+    padding-left: 30%;
+    
+    
+    }
 
-}
-.navbar-brand img {
-padding-left: 30%;
-}
+    #navbarScroll ::before {
+        margin: -25px; /*Separar los íconos del texto*/
+    }
+
+  }
+ /* @media only screen and (min-device-width: 2048px){
+    /* Aquí van todos los estilos CSS 
+    .container-navbar{
+        background-color: green;
+    }
+    #navbarScroll{
+        justify-content: flex-end;
+        
+        
+    }
+    #navbarScroll a{
+        color: white;
+       
+        margin-right: 5%;
+        width: max-content;
+    
+    }
+    .navbar-brand img {
+    padding-left: 30%;
+    }
+  }*/
