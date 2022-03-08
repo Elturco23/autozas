@@ -12,7 +12,7 @@ function navbar() {
     <Navbar.Collapse id="navbarScroll">
       <Nav
         className=""
-        style={{ maxHeight: '100px',width:'40%' }}
+        style={{ maxHeight: '100px', width:'50%' }}
         navbarScroll
       >
         <Nav.Link href="#action1"><i class='fa fa-home'></i>Inicio</Nav.Link>
@@ -22,7 +22,7 @@ function navbar() {
         <Nav.Link href="#" >
           
         
-<i class='fa fa-phone-square'></i>Contactenos
+<i class='fa fa-phone-square'></i>Contáctenos
         </Nav.Link>
         <Nav.Link href="#action2">
 <i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
