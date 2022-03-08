@@ -26,6 +26,11 @@
     }
 
   }
+  @media (min-width: 1600px) and (orientation: landscape) {
+    .Scroll{
+        width: 40%;
+    }
+  }
  /* @media only screen and (min-device-width: 2048px){
     /* Aquí van todos los estilos CSS 
     .container-navbar{

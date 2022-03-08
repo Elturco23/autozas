@@ -11,7 +11,7 @@ function navbar() {
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
-        className=""
+        className="Scroll"
         style={{ maxHeight: '100px', width:'50%' }}
         navbarScroll
       >
