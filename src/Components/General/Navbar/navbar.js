@@ -2,12 +2,14 @@ import React from 'react';
 import {NavDropdown,Navbar,Container, Nav,Form,FormControl,Button} from 'react-bootstrap' ;
 import './navbar.css';
 import logo from '../../../img/contorno.png';
+import fondo from '../../../img/llanta22.png';
 function navbar() {
     return (
         <div className='container-principal-navbar'>
             <Navbar className='container-navbar' expand="lg">
   <Container fluid>
     <Navbar.Brand href="#"><img src={logo} height='87px'/></Navbar.Brand>
+    <Navbar.Brand href="#"><img src={fondo} height='87px'/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
