@@ -1,4 +1,18 @@
 .container-navbar{
-    background-color: orange;
+    background-color: green;
+}
+#navbarScroll{
+    justify-content: flex-end;
     
+    
+}
+#navbarScroll a{
+    color: white;
+   
+    margin-right: 5%;
+    width: max-content;
+
+}
+.navbar-brand img {
+padding-left: 30%;
 }
