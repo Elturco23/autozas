@@ -4,8 +4,8 @@ import './navbar.css';
 import logo from '../../../img/contorno.png';
 function navbar() {
     return (
-        <div className='container-principal-navbar'>
-            <Navbar className='container-navbar' expand="lg">
+        
+            <Navbar className='sticky-top' expand="lg" style={{backgroundColor:"green"}}>
   <Container fluid>
     <Navbar.Brand href="#"><img src={logo} height='87px'/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -31,7 +31,7 @@ function navbar() {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-        </div>
+        
     );
 }
 
