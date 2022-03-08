@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavDropdown,Navbar,Container, Nav,Form,FormControl,Button} from 'react-bootstrap' ;
 import './navbar.css';
+import logo from '../../../img/contorno.png';
 function navbar() {
     return (
         <div className='container-principal-navbar'>
@@ -11,7 +12,7 @@ function navbar() {
     <Navbar.Collapse id="navbarScroll">
       <Nav
         className=""
-        style={{ maxHeight: '100px',width:'40%' }}
+        style={{ maxHeight: '100px',width:'auto' }}
         navbarScroll
       >
         <Nav.Link href="#action1"><i class='fa fa-home'></i>Inicio</Nav.Link>
