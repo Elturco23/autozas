@@ -5,8 +5,8 @@ import logo from '../../../img/contorno.png';
 import fondo from '../../../img/llanta22.png';
 function navbar() {
     return (
-        <div className='container-principal-navbar'>
-            <Navbar className='container-navbar' expand="lg">
+        
+            <Navbar className='sticky-top' expand="lg" style={{backgroundColor:"green"}}>
   <Container fluid>
     <Navbar.Brand href="#"><img src={logo} height='87px'/></Navbar.Brand>
     <Navbar.Brand href="#"><img src={fondo} height='87px'/></Navbar.Brand>
@@ -33,7 +33,7 @@ function navbar() {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-        </div>
+        
     );
 }
 

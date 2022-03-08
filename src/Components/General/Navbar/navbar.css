@@ -1,5 +1,6 @@
 @media (min-width: 700px) and (orientation: landscape) { 
    /* —- Aquí van todos los estilos CSS*/ 
+   
     .container-navbar{
         background-color: green;
     }
