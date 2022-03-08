@@ -3,6 +3,9 @@
     .container-navbar{
         background-color: green;
     }
+    .Scroll{
+        width: 50%;
+    }
     #navbarScroll{
         justify-content: flex-end;
         
@@ -26,9 +29,17 @@
     }
 
   }
-  @media (min-width: 1600px) and (orientation: landscape) {
+  
+  @media (min-width: 1600px) {
     .Scroll{
-        width: 40%;
+        width: 36%;
+    }
+    #navbarScroll a{
+       
+       
+        margin-right: 10%;
+        
+   
     }
   }
  /* @media only screen and (min-device-width: 2048px){
