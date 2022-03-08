@@ -1,10 +1,10 @@
 import React from 'react';
 import {NavDropdown,Navbar,Container, Nav,Form,FormControl,Button} from 'react-bootstrap' ;
-import './navbar.css'
-import logo from '../../../img/contorno.png'
+import './navbar.css';
+import logo from '../../../img/contorno.png';
 function navbar() {
     return (
-        <div>
+        <div className='container-principal-navbar'>
             <Navbar className='container-navbar' expand="lg">
   <Container fluid>
     <Navbar.Brand href="#"><img src={logo} height='87px'/></Navbar.Brand>
@@ -27,7 +27,7 @@ function navbar() {
         <Nav.Link href="#action2">
 <i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
       </Nav>
-     
+      
     </Navbar.Collapse>
   </Container>
 </Navbar>
