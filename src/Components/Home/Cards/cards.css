@@ -1,0 +1,29 @@
+.principal-card{
+    margin: 0 5%;
+    padding-top: 2%;
+    display: 	flex;
+}
+.card-1{
+    width: 25%;
+    margin-top: 2%;
+    margin-right: 9%;
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    background-color: gainsboro;
+}
+.card-1  h5{
+    text-align: center;
+    margin-top: 2%;
+}
+.card-1 img{
+    margin: 0 44%;
+    margin-top: 5%;
+}
+.card-body{
+    width: 100%;
+    padding: 0 6% 6% 6%;
+    
+}
+.card-1 p{
+    text-align: center;
+}

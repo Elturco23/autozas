@@ -1,5 +1,8 @@
 import React from 'react';
 import './footer.css';
+import iconfacebook from '../../../img/facebook-removebg-preview.png';
+import iconinstagram from '../../../img/instagram (1).png'
+import iconwhatsapp from '../../../img/whatsapp (1).png'
 export default function Footer() {
     return (
 
@@ -13,13 +16,16 @@ export default function Footer() {
                                 <a>AUTOZAS</a>
                             </li>
                         </ul>
-                        <hr/>
+                        <hr className='separador-footer'/>
                         <div className='redes-sociales'>
-
+                         <img src={iconfacebook} className='icon-face'/>
+                         <img src={iconinstagram} className='icon-insta'/>
+                         <img src={iconwhatsapp}className='icon-what'/>
+                         
 
                         </div>
                     </div>
-                    <hr/>
+                    <hr className='separador-footer'/>
                     <div className='footer-secundario'>
                         <ul className='list-footer'>
                             <li>

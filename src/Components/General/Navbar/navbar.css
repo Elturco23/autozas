@@ -2,11 +2,12 @@
    /* —- Aquí van todos los estilos CSS*/ 
    
     .container-navbar{
-        background-color: green;
+        background-color: #120D31;
     }
     .Scroll{
-        width: 50%;
+        width: 40%;
     }
+    
     #navbarScroll{
         justify-content: flex-end;
         
@@ -38,7 +39,7 @@
     #navbarScroll a{
        
        
-        margin-right: 10%;
+        margin-right: 8%;
         
    
     }

@@ -6,10 +6,10 @@ import fondo from '../../../img/llanta22.png';
 function navbar() {
     return (
         
-            <Navbar className='sticky-top' expand="lg" style={{backgroundColor:"green"}}>
+            <Navbar className='sticky-top' expand="lg" style={{backgroundColor:"#20A39E"}}>
   <Container fluid>
-    <Navbar.Brand href="#"><img src={logo} height='87px'/></Navbar.Brand>
-    <Navbar.Brand href="#"><img src={fondo} height='87px'/></Navbar.Brand>
+    <Navbar.Brand href="#"><img src={logo} height='80px'/></Navbar.Brand>
+    
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -27,7 +27,7 @@ function navbar() {
 <i class='fa fa-phone-square'></i>Contáctenos
         </Nav.Link>
         <Nav.Link href="#action2">
-<i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
+        <i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
       </Nav>
       
     </Navbar.Collapse>
