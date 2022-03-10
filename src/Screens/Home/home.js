@@ -5,11 +5,11 @@ import Footer from "../../Components/General/Footer/footer";
 function Home(){
 return(
     <>
-    <Navbar/>
+    
 <div className="container-principal-home">
-
+<Navbar/>
 </div>
-
+<Footer/>
 </>
 );
 } 

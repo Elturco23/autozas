@@ -1,77 +1,51 @@
 import React from 'react';
-
+import './footer.css';
 export default function Footer() {
     return (
+
         <>
-        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <footer>
+                <div className='container-principal-footer'>
 
-            <div class="container pt-4">
-
-                <section class="mb-4">
-
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-facebook-f"></i
-                    ></a>
+                    <div className='footer-primario'>
+                        <ul className='list-footer-primario'>
+                            <li className='list-footer-primario-li'>
+                                <a>AUTOZAS</a>
+                            </li>
+                        </ul>
+                        <hr/>
+                        <div className='redes-sociales'>
 
 
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-twitter"></i
-                    ></a>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div className='footer-secundario'>
+                        <ul className='list-footer'>
+                            <li>
+                                <a>Inicio</a>
+                            </li>
+                            <li>
+                                <a>Politica de privacidad</a>
+                            </li>
+                            <li>
+                                <a>Acerca de nosotros</a>
+                            </li>
+                            <li>
+                                <a>Contacto</a>
+                            </li>
+                            
 
-
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-google"></i
-                    ></a>
-
-
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-instagram"></i
-                    ></a>
-
-
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-linkedin"></i
-                    ></a>
-
-                    <a
-                        class="btn btn-link btn-floating btn-lg text-dark m-1"
-                        href="#!"
-                        role="button"
-                        data-mdb-ripple-color="dark"
-                    ><i class="fab fa-github"></i
-                    ></a>
-                </section>
-
-            </div>
-
-
-
-            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2020 Copyright:
-                <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-            </div>
-
-        </footer>
+                        </ul>
+                        <ul className='list-footer-2'>
+                        <li className='list-footer-2-li'>
+                                <a >© 2022 Copyright : Autozas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </>
+
     );
 }
