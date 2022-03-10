@@ -3,6 +3,7 @@ import './home.css';
 import Navbar from "../../Components/General/Navbar/navbar";
 import Footer from "../../Components/General/Footer/footer";
 import Cards from '../../Components/Home/Cards/cards';
+
 function Home(){
 return(
     <>
