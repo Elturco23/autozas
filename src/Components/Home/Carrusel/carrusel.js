@@ -17,7 +17,7 @@ function Carrusel() {
   
 
   return (
-    <div className="App">
+    <div className="container-carousel">
       
       <div className="carousel-wrapper">
         <Carousel breakPoints={breakPoints}>
