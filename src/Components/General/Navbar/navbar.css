@@ -1,67 +1,57 @@
-@media (min-width: 700px) and (orientation: landscape) { 
-   /* —- Aquí van todos los estilos CSS*/ 
-   
-    .container-navbar{
+@media (min-width: 700px) and (orientation: landscape) {
+    /* —- Aquí van todos los estilos CSS*/
+    .container-navbar {
         background-color: #120D31;
     }
-    .Scroll{
-        width: 40%;
+    .Scroll {
+        width: 51%;
     }
-    
-    #navbarScroll{
+    #navbarScroll {
         justify-content: flex-end;
-        
-        
     }
-    #navbarScroll a{
+    #navbarScroll a {
         color: white;
-       
-        margin-right: 5%;
+        margin-right: 2%;
         width: max-content;
-   
     }
     .navbar-brand img {
-    padding-left: 30%;
-    
-    
+        padding-left: 40%;
     }
-
     #navbarScroll ::before {
-        margin: -25px; /*Separar los íconos del texto*/
+        margin: 6px;
+        /*Separar los íconos del texto*/
     }
+}
 
-  }
-  
-  @media (min-width: 1600px) {
-    .Scroll{
-        width: 36%;
+@media (min-width: 1600px) {
+    .Scroll {
+        width: 37%;
     }
-    #navbarScroll a{
-       
-       
-        margin-right: 8%;
-        
-   
-    }
-  }
- /* @media only screen and (min-device-width: 2048px){
-    /* Aquí van todos los estilos CSS 
-    .container-navbar{
-        background-color: green;
-    }
-    #navbarScroll{
-        justify-content: flex-end;
-        
-        
-    }
-    #navbarScroll a{
-        color: white;
-       
-        margin-right: 5%;
-        width: max-content;
-    
+    #navbarScroll a {
+        margin-right: 3%;
     }
     .navbar-brand img {
-    padding-left: 30%;
+        padding-left: 60%;
     }
-  }*/
+}
+
+@media(min-width:768px)and (max-width:968px) {
+    .navbar-brand {
+        margin-left: 2%;
+    }
+    .sticky-top {
+        width: 88%;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../../../img/menu.png);
+    }
+    .navbar-light .navbar-toggler {
+        margin-right: 9%;
+    }
+    .navbar-collapse {
+        height: 170px;
+    }
+    .navbar-nav-scroll {
+        max-height: 100%;
+    }
+}

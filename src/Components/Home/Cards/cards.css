@@ -1,12 +1,12 @@
 .principal-card{
-    margin: 0 5%;
+    margin: 0 0;
     padding-top: 2%;
     display: 	flex;
 }
 .card-1{
     width: 25%;
-    margin-top: 2%;
-    margin-right: 9%;
+    margin-top: 5%;
+    margin-right: 15%;
     box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: justify;
     background-color: gainsboro;
@@ -26,4 +26,31 @@
 }
 .card-1 p{
     text-align: center;
+}
+.principal-card :last-child{
+    margin-right: 0;
+}
+.titulo-bienvenida-home{
+    text-align: center;
+font-size: 48px;
+letter-spacing: 10px;
+padding-top: 3%;
+color: #2B2D42;
+font-weight: bold;
+}
+.card-title{
+    color:#2B2D42;
+    font-weight: bold;
+}
+.subtitulo-bienvenida-home{
+    text-align: center;
+    padding-top:1%;
+    letter-spacing: 3px;
+color: #2B2D42;
+font-weight: bold;
+padding-right: 5%;
+}
+.card-text{
+    color: gray;
+    font-weight: 600;
 }

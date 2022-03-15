@@ -1,32 +1,50 @@
-import React, { useState } from "react";
+import React from "react";
+import './carrusel.css';
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import {cartas} from './cartas';
 
-import Carousel from "react-elastic-carousel";
+const items=cartas;
+export default class carousel extends React.Component {
+  state = {
+    responsive: { 500: { items: 2 }, 758: { items: 3 }, 1024: { items: 4 } },
+  };
+  render() {
+    const { responsive } = this.state;
+    return (
+      <div className="container-carousel">
+      
+      <div className="carousel-wr1apper">
+      <h2>Talleres Asociados a Autozas</h2>
+        <AliceCarousel autoPlay
+          autoPlayInterval="2000"
+          infinite
+          buttonsDisabled={true}
+          disableButtonsControls={true}
+          disableDotsControls={true}
+          responsive={responsive} >
+          {items.map((item) => (
+            <div class="container-cartas">
+            <img src={item.img} height={item.alto} width={item.ancho} />
+            
+            <div class="card-cuerpo">
+              
+            <hr className='separador'/>
+              <h5 class="card-title">{item.title}</h5>
+              <p class="card-text">{item.descripcion}</p>
+             
+            </div>
+          </div>
+          ))}
+        </AliceCarousel>
+      </div>
+      </div>
+        
+       
+     
+    );
 
-import "./carrusel.css";
-
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 }
-];
-
-function Carrusel() {
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+    }
 
   
-
-  return (
-    <div className="container-carousel">
-      
-      <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
-          {items.map((item) => (
-            <img />
-          ))}
-        </Carousel>
-      </div>
-    </div>
-  );
 }
-export default Carrusel;

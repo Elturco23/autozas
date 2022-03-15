@@ -9,6 +9,8 @@ import catalogo from '../../../img/cards-home/catalogo.png';
 function cards() {
     return (
         <>
+        <h1 className='titulo-bienvenida-home'>BIENVENIDOS A AUTOZAS </h1>
+        <h3 className='subtitulo-bienvenida-home'>"Tu solución eficaz"</h3>
         <div className='principal-card'>
         <div class="card-1">
         <img src={iconwhat}/>
@@ -25,7 +27,7 @@ function cards() {
         <div class="card-body">
         <hr className='separador'/>
           <h5 class="card-title">Localización</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Encuentra el taller más cercano a tí rapidamente</p>
          
         </div>
       </div>
@@ -33,8 +35,8 @@ function cards() {
       <img src={taller}/>
         <div class="card-body">
         <hr className='separador'/>
-          <h5 class="card-title">Lista de talleres</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">Variedad de talleres</h5>
+          <p class="card-text">Contamos con una variedad de talleres de toda Barranquilla</p>
           
         </div>
       </div>
@@ -54,7 +56,7 @@ function cards() {
         <div class="card-body">
         <hr className='separador'/>
           <h5 class="card-title">Conocimiento de los talleres</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Brindamos información detallada y practica sobre los talleres</p>
           
         </div>
       </div>
@@ -63,7 +65,7 @@ function cards() {
         <div class="card-body">
         <hr className='separador'/>
           <h5 class="card-title">Catalogo de los Talleres</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Mostramos detalladamente los catalogo de servicios de cada taller</p>
          
         </div>
       </div>
