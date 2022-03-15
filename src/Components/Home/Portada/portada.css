@@ -13,12 +13,12 @@
         
     }
 }
-@media (min-width:768px){
+@media (min-width:768px) and (max-width:968px){
     .logo-portada{ 
-        left: 69%;
-        top: 453px ;
-        height: 80px;
-        width: 140px;
+        left: 77%;
+        top: 430px ;
+        height: 90px;
+        width: 160px;
         opacity: 0.5;
     }
 }

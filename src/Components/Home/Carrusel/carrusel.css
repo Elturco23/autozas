@@ -32,3 +32,11 @@ font-weight: 600;
 color: #2B2D42;
 font-size: 36px;
 }
+@media (min-width:768px) and (max-width:968px){
+  .carousel-wr1apper h2{
+    font-size: 30px;
+  }
+  .container-carousel{
+    height: 45vh;
+  }
+}

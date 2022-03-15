@@ -40,7 +40,9 @@ export default function Footer() {
                             <li>
                                 <a>Contacto</a>
                             </li>
-                            
+                            <li>
+                                <a>Preguntas frecuentes</a>
+                            </li>
 
                         </ul>
                         <ul className='list-footer-2'>

@@ -37,21 +37,36 @@
 
 @media(min-width:768px)and (max-width:968px) {
     .navbar-brand {
-        margin-left: 2%;
+        margin-left: 5%;
     }
-    .sticky-top {
-        width: 88%;
-    }
+    
     .navbar-light .navbar-toggler-icon {
         background-image: url(../../../img/menu.png);
+        
     }
-    .navbar-light .navbar-toggler {
-        margin-right: 9%;
-    }
+  
     .navbar-collapse {
         height: 170px;
     }
     .navbar-nav-scroll {
         max-height: 100%;
+        align-items: flex-end;
+        margin-right: 1%;
+        
+       
     }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+       
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-link i{
+visibility: hidden;
+height: 0;
+width: 0;
+    }
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+        color:white;
+    }
+
 }

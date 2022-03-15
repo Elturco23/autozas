@@ -17,7 +17,7 @@ export default class carousel extends React.Component {
       <div className="carousel-wr1apper">
       <h2>Talleres Asociados a Autozas</h2>
         <AliceCarousel autoPlay
-          autoPlayInterval="2000"
+          autoPlayInterval="1500"
           infinite
           buttonsDisabled={true}
           disableButtonsControls={true}
@@ -32,7 +32,7 @@ export default class carousel extends React.Component {
             <hr className='separador'/>
               <h5 class="card-title">{item.title}</h5>
               <p class="card-text">{item.descripcion}</p>
-             
+              <a href="#">Ver más</a>
             </div>
           </div>
           ))}

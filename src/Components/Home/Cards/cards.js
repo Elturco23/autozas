@@ -47,7 +47,7 @@ function cards() {
         <div class="card-body">
         <hr className='separador'/>
           <h5 class="card-title">Ahorro de tiempo</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">El uso intuitivo de este servicio te permitira encontrar lo que necesitas en un corto lapso de tiempo</p>
          
         </div>
       </div>
