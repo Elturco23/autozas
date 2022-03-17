@@ -1,24 +1,2 @@
-.logo-portada{
-    position: absolute;
-    top: 700px;
-    left: 79%;
-    opacity: 0.4;
-}
-@media (min-width:1600px) {
-    .logo-portada{
-       height: 170px;
-       width: 300px;
-        top: 970px;
-        left: 83%;
-        
-    }
-}
-@media (min-width:768px) and (max-width:968px){
-    .logo-portada{ 
-        left: 77%;
-        top: 430px ;
-        height: 90px;
-        width: 160px;
-        opacity: 0.5;
-    }
-}
+
+

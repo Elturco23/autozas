@@ -54,14 +54,33 @@ padding-right: 5%;
     color: gray;
     font-weight: 600;
 }
-@media(min-width:768px)and (max-width:968px) {
+@media(min-width:540px)and (max-width:968px) {
     .titulo-bienvenida-home{
         font-size: 40px;
         letter-spacing: 5px;
         
     }  
     .card-1{
-        margin-right: 8%;
+        margin-right: 7%;
         width: 30%;
     }
+}
+@media(max-width:415px) {
+.componentes-home{
+margin: 0 3%;
+}
+
+.titulo-bienvenida-home{
+font-size: 36px;
+}
+.card-1{
+    margin-right: 0;
+    width: 60%;
+    margin: 0 20%;
+    margin-top: 10%;
+}
+.principal-card{
+    flex-direction: column;
+}
+
 }

@@ -1,0 +1,135 @@
+.container-principal-publicidad-1 {
+  margin: 0 10%;
+  display: flex;
+}
+.container-principal-publicidad {
+  background-color: #dcd6f7;
+  margin-bottom: 10%;
+  height: 71.8vh;
+}
+.container-principal-publicidad > h2 {
+  padding-top: 3%;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 2%;
+  font-weight: bold;
+  color: #2b2d42;
+  font-size: 38px;
+}
+.publicidad1 {
+  height: 50%;
+  width: 50%;
+}
+.publicidad1 img {
+  margin: 0 15%;
+}
+.publicidad2 {
+  margin-top: 5%;
+  height: 50%;
+  display: inline-flex;
+  flex-direction: column;
+}
+.publicidad2 img {
+  margin: 5% 0;
+}
+.publicidad2 button {
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: #2b2d42;
+  box-shadow: 4px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  height: 80px;
+  margin: 10% 0;
+}
+.texto-apple {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 3%;
+}
+@media (min-width: 768px) and (max-width: 911px) {
+  .container-principal-publicidad {
+    height: 44vh;
+  }
+  .publicidad1 img {
+    margin: 0;
+  }
+  .container-principal-publicidad-1 {
+    margin: 0 3%;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  .container-principal-publicidad-1 {
+    flex-direction: column;
+    margin: 0;
+  }
+  .publicidad1 img {
+    margin: 0 50%;
+
+    height: 250px;
+  }
+  .publicidad2 button {
+    width: 100%;
+    margin: 6% 5%;
+    height: 60px;
+  }
+  .iconify {
+    height: 48px;
+    width: 48px;
+  }
+  .texto-apple {
+    font-size: 22px;
+  }
+  .publicidad2 {
+    width: 100%;
+    margin-top: 10%;
+    flex-direction: row;
+  }
+  .container-principal-publicidad > h2 {
+    font-size: 30px;
+    padding-top: 8%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1281px) {
+  .publicidad1 img {
+    margin: 0;
+    height: 339px;
+  }
+}
+@media (max-width: 415px) {
+  .publicidad1 img {
+    margin: 0;
+    height: 300px;
+  }
+  .container-principal-publicidad-1 {
+    flex-direction: column;
+  }
+  .publicidad2 button {
+    width: 80%;
+    margin: 6% 0;
+  }
+  .container-principal-publicidad {
+    height: 75vh;
+  }
+  .publicidad2 {
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+}
+@media (min-width: 912px) and (max-width: 968px) {
+  .container-principal-publicidad {
+    height: 33.5vh;
+  }
+  .publicidad1 img {
+    margin: 0;
+  }
+  .container-principal-publicidad-1 {
+    margin: 0 3%;
+  }
+}
+@media (min-width: 390px) and(max-width:399px) {
+  .container-principal-publicidad {
+    height: 65vh;
+  }
+}

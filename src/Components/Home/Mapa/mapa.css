@@ -1,0 +1,23 @@
+.container-mapa {
+  height: 70vh;
+  width: 80%;
+  margin-top: 10%;
+  margin: 10% 10% 0 10%;
+}
+.titulo-mapa {
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 2%;
+  font-weight: 600;
+  color: #2b2d42;
+  font-size: 36px;
+}
+@media(max-width:415px) {
+  .container-mapa{
+    height: 42vh;
+  }
+  .titulo-mapa{
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+}
