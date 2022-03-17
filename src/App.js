@@ -1,7 +1,7 @@
 
 import './App.css';
 import Home from './Screens/Home/home';
-import ListaTaller from './Screens/Lista-Talleres/taller';
+import ListaTaller from './Screens/ListaTalleres/listataller';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 function App() {
   return (

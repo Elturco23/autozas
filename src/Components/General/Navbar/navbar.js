@@ -17,7 +17,7 @@ function navbar() {
               navbarScroll
             >
               <Nav.Link href="#action1"><i class='fa fa-home'></i>Inicio</Nav.Link>
-              <Nav.Link href="#action2"><i class='fas fa-toolbox'></i>Talleres</Nav.Link>
+              <Nav.Link href="/lista-taller"><i class='fas fa-toolbox'></i>Talleres</Nav.Link>
               
               
               <Nav.Link href="#" >
