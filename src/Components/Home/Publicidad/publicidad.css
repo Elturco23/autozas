@@ -128,7 +128,7 @@
     margin: 0 3%;
   }
 }
-@media (min-width: 390px) and(max-width:399px) {
+@media (min-width: 375px) and(max-width:399px) {
   .container-principal-publicidad {
     height: 65vh;
   }

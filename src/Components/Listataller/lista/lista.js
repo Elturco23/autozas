@@ -15,7 +15,7 @@ export default class lista extends React.Component{
       <img src={item.logo} height={item.heigth} width={item.width} class="mb-1" />
       <h1 class="mb-1">{item.title}</h1>
       <small>Socio de Autozas <br/>
-      <img src={logo} height="80px" /></small>
+      <img className='logo-autozas-lista-taller' src={logo} height="60px" /></small>
     </div>
     
     <h4 className='mb-2'>{item.descripcion}</h4>

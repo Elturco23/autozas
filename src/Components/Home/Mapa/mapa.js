@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
-import './mapa.css';
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import React, { Component } from "react";
 
-class SimpleMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33
-    },
-    zoom: 11
-  };
+import "./mapa.css";
 
-  render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div className='container-mapa'>
-        <h3 className='titulo-mapa'>Talleres Cercanos a ti</h3>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyDTSboVvI6MN2qeP89lrSldb17uSWJ3kxY'}}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text="My Marker"
-          />
-        </GoogleMapReact>
-      </div>
-    );
-  }
+function SimpleMap() {
+  return (
+    // Important! Always set the container height explicitly
+    <div
+      id="map-container-google-2"
+      class="z-depth-1-half map-container"
+      style={{ height: "60vh", width: "100%" }}
+    >
+      <h2 className="titulo-mapa"> Talleres cerca a ti </h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.436361726418!2d-74.80528998568134!3d11.00585065792765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d9f4b6c82d3%3A0xab73301ba7022ef3!2sCentro%20Empresarial%20Green%20Towers!5e0!3m2!1ses!2sco!4v1647614079769!5m2!1ses!2sco"
+        frameborder="0"
+        width='60%'
+        height='100%'
+        style={{ border: 0 }}
+        allowfullscreen
+      ></iframe>
+    </div>
+  );
 }
 
 export default SimpleMap;

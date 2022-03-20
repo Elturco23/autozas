@@ -1,8 +1,8 @@
-.container-mapa {
+#map-container-google-2 {
   height: 70vh;
   width: 80%;
   margin-top: 10%;
-  margin: 10% 10% 0 10%;
+  margin: 10% 5% 0 5%;
 }
 .titulo-mapa {
   text-align: center;

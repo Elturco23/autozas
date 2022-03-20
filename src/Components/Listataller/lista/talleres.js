@@ -4,7 +4,7 @@ heigth:'100px',
 width:'185px',
 descripcion:'" Somos los mejores "',
 title:'Toyota',
-href:'/taller'
+href:'/taller1'
 }
 ,
 {
@@ -12,5 +12,15 @@ href:'/taller'
     heigth:'100px',
     width:'185px',
     descripcion:'" El preferido "',
-    title: 'Chevrolet'
-}]
+    title: 'Chevrolet',
+    href:'#'
+},
+{
+    logo: 'https://memolira.com/wp-content/uploads/2016/07/KIA-logo-e1596055381793.png',
+    heigth:'100px',
+    width:'185px',
+    descripcion:'" Movimiento que inspira "',
+    title: 'Kia',
+    href:'#'
+}
+]
