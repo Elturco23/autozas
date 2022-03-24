@@ -1,3 +1,9 @@
-.container-portada-taller1{
-    height: 53vh;
+.container-portada-taller1 img{
+    height: 50vh;
+}
+
+@media (min-width:280px) and (max-width:2048px){
+.container-portada-taller1 img{
+    height: 100%;
+}
 }

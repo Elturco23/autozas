@@ -20,12 +20,12 @@ function navbar() {
               <Nav.Link href="/lista-taller"><i class='fas fa-toolbox'></i>Talleres</Nav.Link>
               
               
-              <Nav.Link href="#" >
+              <Nav.Link href="/contactanos" >
                 
               
       <i class='fa fa-phone-square'></i>Contáctenos
               </Nav.Link>
-              <Nav.Link href="/contactanos">
+              <Nav.Link href="">
               <i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
             </Nav>
             

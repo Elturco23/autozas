@@ -32,7 +32,7 @@ export default class carousel extends React.Component {
             <hr className='separador'/>
               <h5 class="card-title">{item.title}</h5>
               <p class="card-text">{item.descripcion}</p>
-              <a href="#">Ver más</a>
+              <a href={item.href}>Ver más</a>
             </div>
           </div>
           ))}

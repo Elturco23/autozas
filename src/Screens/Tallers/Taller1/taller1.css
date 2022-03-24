@@ -5,3 +5,9 @@
     display: flex;
     margin: 10% 0;
 }
+@media (min-width:280px) and (max-width:540px){
+    .mapa-and-catalogo{
+        display: block;
+        width: 100%;
+    }
+}

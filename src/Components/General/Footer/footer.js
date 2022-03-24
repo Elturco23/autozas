@@ -41,7 +41,7 @@ export default function Footer() {
                                 <a href='/contactanos'>Contacto</a>
                             </li>
                             <li>
-                                <a>Preguntas frecuentes</a>
+                                <a href='/faqs'>Preguntas frecuentes</a>
                             </li>
 
                         </ul>

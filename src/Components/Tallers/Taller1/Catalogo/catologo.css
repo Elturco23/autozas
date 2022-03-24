@@ -17,3 +17,38 @@ font-weight: 600;
     color: black;
     font-weight: 600;
 }
+@media (min-width: 280px) and (max-width: 767px) {
+    .container-acordion-catalogo-taller1{
+        width: 95.5%;
+        
+    }
+}
+@media (min-width: 768px) and (max-width: 911px) {
+    .container-acordion-catalogo-taller1{
+        width: 100%;
+        margin-top: 21%;
+    }
+    .container-acordion-catalogo-taller1 h2{
+        font-size: 36px
+    }
+}
+@media (min-width: 912px) and (max-width: 102px) {
+    .container-acordion-catalogo-taller1{
+        width: 100%;
+        margin-top: 18.2%;
+    }
+    .container-acordion-catalogo-taller1 h2{
+        font-size: 36px
+    }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container-acordion-catalogo-taller1{
+        width: 100%;
+        margin-top: 16.2%;
+    }
+    .container-acordion-catalogo-taller1 h2{
+        font-size: 36px
+    }
+}
+
+

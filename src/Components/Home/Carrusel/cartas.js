@@ -3,7 +3,8 @@ export const cartas = [{
     title: "Toyota",
     descripcion: "Somos los mejores",
     alto: "70px",
-    ancho: "125px"
+    ancho: "125px",
+    href:'/taller1'
 }
     , {
     img: "https://1000marcas.net/wp-content/uploads/2020/01/Chevrolet-logo.png",

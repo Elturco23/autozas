@@ -5,7 +5,7 @@
 .container-principal-publicidad {
   background-color: #dcd6f7;
   margin-bottom: 10%;
-  height: 68.5vh;
+  height: 100%;
 }
 .container-principal-publicidad > h2 {
   padding-top: 3%;
@@ -48,10 +48,17 @@
   margin-bottom: 0;
   margin-top: 3%;
 }
+@media (min-width: 1600px)  {
+.container-principal-publicidad{
+  height: 100%;
+}
+.publicidad1 img {
+  margin: 0;
+  height: 100%;
+}
+}
 @media (min-width: 768px) and (max-width: 911px) {
-  .container-principal-publicidad {
-    height: 44vh;
-  }
+  
   .publicidad1 img {
     margin: 0;
   }
@@ -94,7 +101,7 @@
 @media (min-width: 1024px) and (max-width: 1281px) {
   .publicidad1 img {
     margin: 0;
-    height: 339px;
+    height: 400px;
   }
 }
 @media (max-width: 415px) {
@@ -109,18 +116,14 @@
     width: 80%;
     margin: 6% 0;
   }
-  .container-principal-publicidad {
-    height: 75vh;
-  }
+  
   .publicidad2 {
     margin-left: 15%;
     margin-top: 10%;
   }
 }
 @media (min-width: 912px) and (max-width: 968px) {
-  .container-principal-publicidad {
-    height: 33.5vh;
-  }
+  
   .publicidad1 img {
     margin: 0;
   }
@@ -128,8 +131,47 @@
     margin: 0 3%;
   }
 }
-@media (min-width: 375px) and(max-width:399px) {
+
+@media (min-width: 280px) and (max-width:389px) {
   .container-principal-publicidad {
-    height: 65vh;
+    
+    margin-top: 8%;
+  }
+  .publicidad1 img {
+    margin: 0 35%;
+    height: 200px;
+  }
+  .container-principal-publicidad h2{
+    font-size: 25px;
+  }
+  .publicidad2 button {
+    width: 40%;
+    height: 50px;
+    margin: 4% 5%;
+  }
+  .publicidad2 button > h2 {
+font-size: 15px;
+  }
+  .publicidad2 button > .iconify{
+    width: 32px;
+    height: 32px;
+  }
+
+  .publicidad2 {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-principal-publicidad-1 {
+    flex-direction: column;
+  }
+  .container-principal-publicidad-1{
+    margin: 0 3%;
+  }
+}
+@media (min-width: 390px) and (max-width:400px) {
+  .container-principal-publicidad {
+    
+    margin-top: 8%;
   }
 }
