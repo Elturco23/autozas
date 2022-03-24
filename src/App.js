@@ -4,6 +4,7 @@ import Home from './Screens/Home/home';
 import ListaTaller from './Screens/ListaTalleres/listataller';
 import Taller1 from './Screens/Tallers/Taller1/taller1';
 import Contactanos from './Screens/Contactanos/Formulario/contactanos';
+import FAQs from './Screens/FAQs/faqs';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route exact path="/lista-taller" element={<ListaTaller/>}/>
             <Route exact path="/taller1" element={<Taller1/>}/>
             <Route exact path="/contactanos" element={<Contactanos/>}/>
+            <Route exact path="/faqs" element={<FAQs/>}/>
              </Routes>
         </BrowserRouter>
         </div>
