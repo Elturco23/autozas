@@ -1,32 +1,55 @@
-.container-principal-informacion-taller1{
-    box-shadow:  0 0.25rem 1.875rem rgb(0 0 0 / 10%);
-    height: 25vh;
-    margin: 0 5%;
-    border-radius: .5rem;
-    display: inline-flex;
-    
-    width: 90%;
-}
-.logo-taller1{
-    box-shadow:  0 0.25rem 1.875rem rgb(0 0 0 / 10%);
-    border-radius: .5rem;
-    width: 15%;
-    align-self: center;
-    height: 90%;
-    
-}
-.logo-taller1 img{
-margin : 25% 0;
-}
-.nombre-taller1,.logo-taller1{
-margin : 0 5%;
+.container-principal-informacion-taller1 {
+  box-shadow: 0 0.25rem 1.875rem rgb(0 0 0 / 10%);
+  height: 25vh;
+  margin: 0 5%;
+  border-radius: 0.5rem;
+  display: inline-flex;
 
+  width: 90%;
 }
-.nombre-taller1, .direccion-taller1, .contacto-taller1{
-    border-left: 1px solid gainsboro;
-    margin: 3% 0;
-    width: 25%;
+.logo-taller1 {
+  box-shadow: 0 0.25rem 1.875rem rgb(0 0 0 / 10%);
+  border-radius: 0.5rem;
+  width: 15%;
+  align-self: center;
+  height: 90%;
 }
-.direccion-taller1 h5{
-    margin:15% 0 ;
+.logo-taller1 img {
+  margin: 25% 0;
+}
+.nombre-taller1,
+.logo-taller1 {
+  margin: 0 5%;
+}
+.nombre-taller1,
+.direccion-taller1,
+.contacto-taller1 {
+  border-left: 1px solid gainsboro;
+  margin: 3% 0;
+  width: 25%;
+}
+.direccion-taller1 h5 {
+  margin: 15% 0;
+}
+.contacto-taller1 button {
+  margin-top: 3%;
+  border: none;
+  background-color: #E63946;
+  border-radius: 6%;
+  font-size: 14px;
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  letter-spacing: 2px;
+
+  font-weight: 600;
+}
+.contacto-taller1 img {
+  margin-right: 5%;
+}
+.contacto-taller1 h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 415px) {
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './informacion.css';
 import iconLocalitation from '../../../../img/Taller/Taller1/localizacion.png'
+import iconCall from '../../../../img/Taller/Taller1/centro-de-llamadas.png';
 function informacion() {
     return (
         <div className='container-principal-informacion-taller1'>
@@ -14,7 +15,8 @@ function informacion() {
              <h5><img src={iconLocalitation} /> Via 40 #67-125</h5>
             </div>
             <div className='contacto-taller1'>
-               <button ></button>
+              <h6>Comunícate con nosotros</h6>
+               <button ><img src={iconCall} /> LLAMAR</button>
             </div>
         </div>
     );

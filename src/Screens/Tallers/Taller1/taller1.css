@@ -1,0 +1,7 @@
+.container-principal-taller{
+    height: 100%;
+}
+.mapa-and-catalogo{
+    display: flex;
+    margin: 10% 0;
+}

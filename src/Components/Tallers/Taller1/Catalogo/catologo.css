@@ -1,0 +1,19 @@
+.container-acordion-catalogo-taller1{
+    width: 30%;
+    margin: 0 2%;
+    margin-top: 12.6%;
+}
+.container-acordion-catalogo-taller1 h2{
+    color: #2b2d42;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+.accordion-button.collapsed{
+  
+    color: black;
+font-weight: 600;
+}
+.accordion-button:not(.collapsed){
+    color: black;
+    font-weight: 600;
+}

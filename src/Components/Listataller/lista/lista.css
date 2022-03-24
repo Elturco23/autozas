@@ -1,20 +1,89 @@
-.list-group{
-    margin : 2% 3% 0 3%
+.list-group {
+  margin: 2% 3% 0 3%;
 }
-h1.mb-1{
-    margin-top: 2%;
-    font-weight: bold;
-    color:#2B2D42;
+h1.mb-1-texto {
+  margin-top: 2%;
+  font-weight: bold;
+  color: #2b2d42;
+  font-size: 36px;
+}
+.mb-2 {
+  margin-left: 5%;
+  color: #2b2d42;
+}
+.titulo-listatalleres {
+  color: #2b2d42;
+  font-weight: bold;
+  margin-top: 2%;
+  font-size: 50px;
+}
+
+@media (max-width: 415px) {
+  .logo-autozas-lista-taller,
+  h1.mb-1-texto,
+  .texto-small-listataller {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  img.mb-1 {
+    margin: 4% 20%;
+  }
+  .mb-2 {
+    margin-left: 0;
+  }
+  .titulo-listatalleres {
+    margin-top: 5%;
     font-size: 36px;
+  }
+  .list-group {
+    margin: 4%;
+  }
+  
+
 }
-.mb-2{
-    margin-left: 5%;
-    color:#2B2D42;
-    
+@media (min-width: 540px) and (max-width: 767px) {
+  h1.mb-1-texto {
+    display:none;
+    height: 0;
+    width: 0;
+  }
+  img.mb-1 {
+    margin-left: 10%;
+  }
+  .titulo-listatalleres {
+    margin: 5% 0;
+    font-size: 40px;
+  }
+  .mb-2 {
+      text-align: start;
+      width: 100%;
+  }
+  .list-group {
+    margin: 4%;
+  }
+}
+@media (min-width: 912px) and (max-width: 950px) {
+.container-listatalleres{
+    margin: 5% 0;
+}
+.list-group {
+    margin: 4%;
+  }
+}
+@media (min-width:280px) and (max-width:359px){
+  .list-group {
+    margin: 5%;
+  }
+  img.mb-1 {
+    margin: 4% 5%;
+  }
+  .mb-2 {
+    text-align: center;
+    width: 100%;
+    font-size: 19px;
 }
 .titulo-listatalleres{
-    color:#2B2D42;
-    font-weight: bold;
-    margin-top: 2%;
-    font-size: 50px;
+  font-size: 30px;
+}
 }

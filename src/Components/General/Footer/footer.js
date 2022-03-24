@@ -29,7 +29,7 @@ export default function Footer() {
                     <div className='footer-secundario'>
                         <ul className='list-footer'>
                             <li>
-                                <a>Inicio</a>
+                                <a href='/'>Inicio</a>
                             </li>
                             <li>
                                 <a>Politica de privacidad</a>
@@ -38,7 +38,7 @@ export default function Footer() {
                                 <a>Acerca de nosotros</a>
                             </li>
                             <li>
-                                <a>Contacto</a>
+                                <a href='/contactanos'>Contacto</a>
                             </li>
                             <li>
                                 <a>Preguntas frecuentes</a>

@@ -22,5 +22,21 @@ href:'/taller1'
     descripcion:'" Movimiento que inspira "',
     title: 'Kia',
     href:'#'
+},
+{
+    logo: 'https://memolira.com/wp-content/uploads/2016/07/KIA-logo-e1596055381793.png',
+    heigth:'100px',
+    width:'185px',
+    descripcion:'" Movimiento que inspira "',
+    title: 'Kia',
+    href:'#'
+},
+{
+    logo: 'https://memolira.com/wp-content/uploads/2016/07/KIA-logo-e1596055381793.png',
+    heigth:'100px',
+    width:'185px',
+    descripcion:'" Movimiento que inspira "',
+    title: 'Kia',
+    href:'#'
 }
 ]

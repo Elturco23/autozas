@@ -1,0 +1,11 @@
+#map-container-google-taller1{
+   
+    height: 100vh;
+    
+}
+.figura-top{
+    border-left: 100vh solid #E63946;
+    border-top: 83px solid transparent;
+    border-bottom: 83px solid transparent;
+    width: 100%;
+}
