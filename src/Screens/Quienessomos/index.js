@@ -1,18 +1,17 @@
 import React from 'react';
-import './politica.css'
-import Politica from '../../Components/PoliticaPrivacidad/politicaprivacidad';
+import Quienessomos from '../../Components/Quienessomos/index';
 import Footer from '../../Components/General/Footer/footer';
 import Navbar from '../../Components/General/Navbar/navbar';
-function politica() {
+function index(props) {
     return (
         <>
         <Navbar/>
-        <div class="container" >
-            <Politica/>
+        <div>
+            <Quienessomos/>
         </div>
         <Footer/>
         </>
     );
 }
 
-export default politica;
+export default index;

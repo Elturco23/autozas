@@ -32,10 +32,10 @@ export default function Footer() {
                                 <a href='/'>Inicio</a>
                             </li>
                             <li>
-                                <a>Politica de privacidad</a>
+                                <a href='/politicaprivacidad'>Politica de privacidad</a>
                             </li>
                             <li>
-                                <a>Acerca de nosotros</a>
+                                <a href='/quienessomos'>Acerca de nosotros</a>
                             </li>
                             <li>
                                 <a href='/contactanos'>Contacto</a>

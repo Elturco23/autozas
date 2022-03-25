@@ -25,7 +25,7 @@ function navbar() {
               
       <i class='fa fa-phone-square'></i>Contáctenos
               </Nav.Link>
-              <Nav.Link href="">
+              <Nav.Link href="/quienessomos">
               <i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
             </Nav>
             
