@@ -1,9 +1,9 @@
 .container-portada-taller1 img{
-    height: 50vh;
+    height: 30vh;
 }
 
 @media (min-width:280px) and (max-width:2048px){
 .container-portada-taller1 img{
-    height: 100%;
+    height: min-content;
 }
 }

@@ -11,6 +11,10 @@ function listataller() {
         <div className='container-principal-listataller'>
         <Fab color="primary" aria-label="add">
           <AddIcon />
+          <div class="radar"></div>
+          <div class="radar"></div>
+          <div class="radar"></div>
+          <div class="radar"></div>
         </Fab>
             <Navbar/>
             <Lista/>

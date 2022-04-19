@@ -14,6 +14,9 @@
   
    
 }
+.card-title-carousel,.card-text-carousel{
+  text-align: center;
+}
 .separador{
   margin: 7% 10%;
 }

@@ -1,10 +1,9 @@
 import React from 'react';
-import Portada1 from '../../../../img/Taller/Taller1/portada-taller1.jpg';
 import './portada.css';
-function portada() {
+function portada(props) {
     return (
         <div className='container-portada-taller1'>
-            <img src={Portada1} width='100%' ></img>
+            <img src={props.portada} width='100%' ></img>
         </div>
     );
 }

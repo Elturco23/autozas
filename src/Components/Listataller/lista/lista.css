@@ -2,14 +2,16 @@
   margin: 2% 3% 0 3%;
 }
 h1.mb-1-texto {
-  margin-top: 2%;
+  margin-top: 5%;
   font-weight: bold;
   color: #2b2d42;
-  font-size: 36px;
+  font-size: 30px;
+  height: 40%;
 }
 .mb-2 {
   margin-left: 5%;
   color: #2b2d42;
+  text-align: center;
 }
 .titulo-listatalleres {
   color: #2b2d42;
@@ -17,6 +19,16 @@ h1.mb-1-texto {
   margin-top: 2%;
   font-size: 50px;
 }
+.mb-2-texto{
+margin-top: 5%;
+margin-bottom: 0;
+margin-left: 5%;
+padding-bottom: 5%;
+text-align: center;
+height: 40%;
+font-size: 20px;
+}
+
 
 @media (max-width: 415px) {
   .logo-autozas-lista-taller,

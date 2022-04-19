@@ -30,9 +30,9 @@ export default class carousel extends React.Component {
             <div class="card-cuerpo">
               
             <hr className='separador'/>
-              <h5 class="card-title">{item.title}</h5>
-              <p class="card-text">{item.descripcion}</p>
-              <a href={item.href}>Ver más</a>
+              <h5 class="card-title-carousel">{item.title}</h5>
+              <p class="card-text-carousel">{item.descripcion}</p>
+              
             </div>
           </div>
           ))}

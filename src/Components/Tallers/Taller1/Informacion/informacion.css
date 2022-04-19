@@ -7,6 +7,9 @@
 
   width: 90%;
 }
+.h5-taller,.h6-taller,.h2-taller{
+  text-align: center;
+}
 .logo-taller1 {
   box-shadow: 0 0.25rem 1.875rem rgb(0 0 0 / 10%);
   border-radius: 0.5rem;
@@ -15,7 +18,7 @@
   height: 90%;
 }
 .logo-taller1 img {
-  margin: 25% 0;
+  margin: 25% 5%;
 }
 .nombre-taller1,
 .logo-taller1 {
@@ -27,6 +30,7 @@
   border-left: 1px solid gainsboro;
   margin: 3% 0;
   width: 25%;
+  align-self: center;
 }
 .direccion-taller1 h5 {
   margin: 15% 0;
@@ -37,7 +41,7 @@
   background-color: #E63946;
   border-radius: 6%;
   font-size: 14px;
-  height: 50%;
+  height: 61px;
   width: 50%;
   text-align: center;
   letter-spacing: 2px;
@@ -50,6 +54,9 @@
 .contacto-taller1 h6 {
   font-size: 20px;
   font-weight: bold;
+}
+.contacto-taller1{
+  align-self: center;
 }
 @media (max-width: 415px) {
 }
