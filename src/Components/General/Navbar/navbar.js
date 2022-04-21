@@ -16,17 +16,17 @@ function navbar() {
               
               navbarScroll
             >
-              <Nav.Link href="/"><i class='fa fa-home'></i>Inicio</Nav.Link>
-              <Nav.Link href="/lista-taller"><i class='fas fa-toolbox'></i>Talleres</Nav.Link>
+              <Nav.Link href="/"><i className='fa fa-home'></i>Inicio</Nav.Link>
+              <Nav.Link href="/lista-taller"><i className='fas fa-toolbox'></i>Talleres</Nav.Link>
               
               
               <Nav.Link href="/contactanos" >
                 
               
-      <i class='fa fa-phone-square'></i>Contáctenos
+      <i className='fa fa-phone-square'></i>Contáctenos
               </Nav.Link>
               <Nav.Link href="/quienessomos">
-              <i class='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
+              <i className='fa fa-question-circle-o'></i>¿Quiénes somos?</Nav.Link>
             </Nav>
             
           </Navbar.Collapse>

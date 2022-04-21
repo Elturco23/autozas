@@ -2,7 +2,7 @@ import React from "react";
 import './index.css'
 function index() {
   return (
-    <div class="container container-quienessomos">
+    <div className="container container-quienessomos">
       <h1>¿Quiénes somos?</h1>
       <p style={{margin:'5% 0'}}>
         Somos <strong>AUTOZAS</strong>, una pequeña pero motivada empresa que

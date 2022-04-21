@@ -8,7 +8,7 @@ function Map(props) {
 
     <div
       id="map-container-google-taller1"
-      class="z-depth-1-half map-container"
+      className="z-depth-1-half map-container"
      
     >
         <div className="figura-top"></div>

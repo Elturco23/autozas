@@ -2,7 +2,7 @@ import React from "react";
 import "./politicaprivacidad.css";
 function politicaprivacidad() {
   return (
-    <div class="container-principal-politica">
+    <div className="container-principal-politica">
       <h1>Politica de privacidad</h1>
       <small>Última actualización: 20 de marzo de 2022</small>
       <p>

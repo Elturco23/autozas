@@ -16,14 +16,27 @@ console.log(Talleres)
     fetchApi();
   }, []);
     return (
-        <form class="form-inline">
+      !Talleres.length ? <>
+      <div style={{
+       marginTop: '15%',
+       marginBottom:'3%'
+      }}className="spinner-border" role="status">
+      <span className="visually-hidden">Cargando...</span>
+      
+      
+    </div>
+    
+    </>
+    
+      :
+        <form className="form-inline">
             <h1 className="titulo-listatalleres">Talleres Socios</h1>
         <div className='container container-lista'>
            
  
-  <div class="form-group mx-sm-3 mb-2">
+  <div className="form-group mx-sm-3 mb-2">
     
-    <input type="text" class="form-control" id="inputPassword2" placeholder="Buscador">
+    <input type="text" className="form-control" id="inputPassword2" placeholder="Buscador">
 
     </input>
     <button type="submit" className=" boton-lista-taller btn btn-primary mb-2">Confirm identity</button>

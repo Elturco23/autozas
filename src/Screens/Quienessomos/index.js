@@ -9,10 +9,10 @@ function index(props) {
         <>
         <Fab color="primary" aria-label="add">
           <AddIcon />
-          <div class="radar"></div>
-          <div class="radar"></div>
-          <div class="radar"></div>
-          <div class="radar"></div>
+          <div className="radar"></div>
+          <div className="radar"></div>
+          <div className="radar"></div>
+          <div className="radar"></div>
         </Fab>
         <Navbar/>
         <div>

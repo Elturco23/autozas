@@ -16,6 +16,16 @@ console.log(Talleres)
     fetchApi();
   }, []);
     return (
+      !Talleres.length ?  <><div style={{
+        marginTop: '5%',
+        marginBottom:'3%'
+       }}className="spinner-border" role="status">
+       <span className="visually-hidden">Cargando...</span>
+       
+       
+     </div>
+    
+     </> :
         <div>
             <AliceCarousel autoPlay
           autoPlayInterval="1500"
@@ -24,16 +34,16 @@ console.log(Talleres)
           disableButtonsControls={true}
           disableDotsControls={true}
           responsive={props.responsive} >
-          {!Talleres ? (
+          {!Talleres.length ? (
           <h2>No hay talleres disponibles</h2>
         ) : (Talleres.map((item) => (
-            <div class="container-cartas">
+            <div className="container-cartas">
             <img src={item.Logo} height="75px" />
             
-            <div class="card-cuerpo">
+            <div className="card-cuerpo">
               
             <hr className='separador'/>
-              <h5 class="card-title-carousel">{item.Nombre}</h5>
+              <h5 className="card-title-carousel">{item.Nombre}</h5>
               
               
             </div>

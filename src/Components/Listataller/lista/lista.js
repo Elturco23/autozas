@@ -10,17 +10,17 @@ function Talleres(props) {
   return (
     <div className="container-listatalleres">
       
-      <div class="list-group">
-        {!props.talleres ? (
-          <h2>No hay talleres disponibles</h2>
+      <div className="list-group">
+        {!props.talleres.length ? (
+          <h2 style={{width:"100%"}}>No hay talleres disponibles</h2>
         ) : (
           props.talleres.map((item) => (
             <Link
               to={`${item.Id}`}
-              class="list-group-item list-group-item-action flex-column align-items-start "
+              className="list-group-item list-group-item-action flex-column align-items-start "
             >
               <div
-                class="d-flex w-100 justify-content-between"
+                className="d-flex w-100 justify-content-between"
                 id="lista-taller"
               >
                 <img

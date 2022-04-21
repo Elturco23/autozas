@@ -15,10 +15,10 @@ function Home() {
       <div className="container-principal-home">
         <Fab color="primary" aria-label="add">
           <AddIcon />
-          <div class="radar"></div>
-          <div class="radar"></div>
-          <div class="radar"></div>
-          <div class="radar"></div>
+          <div className="radar"></div>
+          <div className="radar"></div>
+          <div className="radar"></div>
+          <div className="radar"></div>
         </Fab>
         <Navbar />
         <Portada />
