@@ -32,7 +32,7 @@ font-size: 20px;
 
 @media (max-width: 415px) {
   .logo-autozas-lista-taller,
-  h1.mb-1-texto,
+  h4.mb-2-texto,
   .texto-small-listataller {
     display: none;
     height: 0;
@@ -51,11 +51,15 @@ font-size: 20px;
   .list-group {
     margin: 4%;
   }
-  
-
+  #lista-taller{
+    flex-direction: column;
+  }
+  h1.mb-1-texto{
+    font-size: 20px;
+  }
 }
 @media (min-width: 540px) and (max-width: 767px) {
-  h1.mb-1-texto {
+  h4.mb-2-texto {
     display:none;
     height: 0;
     width: 0;
@@ -73,6 +77,9 @@ font-size: 20px;
   }
   .list-group {
     margin: 4%;
+  }
+  h1.mb-1-texto{
+    font-size: 20px;
   }
 }
 @media (min-width: 912px) and (max-width: 950px) {
@@ -98,4 +105,15 @@ font-size: 20px;
 .titulo-listatalleres{
   font-size: 30px;
 }
+}
+@media (min-width:768px) and (max-width:1024px){
+  
+  h4.mb-2-texto{
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  h1.mb-1-texto{
+    font-size: 25px;
+  }
 }

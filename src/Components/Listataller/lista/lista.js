@@ -5,28 +5,16 @@ import logo1 from "../../../img/Home/logo1.png";
 import { Link } from "react-router-dom";
 //const items = talleres;
 
-function Talleres() {
-  const url = "http://localhost:3001/talleres";
-  const [Talleres, setTalleres] = useState([]);
-
-  const fetchApi = async () => {
-    const response = await fetch(url);
-    const responseJson = await response.json();
-    setTalleres(responseJson);
-    
-  };
-console.log(Talleres)
-  useEffect(() => {
-    fetchApi();
-  }, []);
+function Talleres(props) {
+  
   return (
     <div className="container-listatalleres">
-      <h1 className="titulo-listatalleres">Talleres Socios</h1>
+      
       <div class="list-group">
-        {!Talleres ? (
+        {!props.talleres ? (
           <h2>No hay talleres disponibles</h2>
         ) : (
-          Talleres.map((item) => (
+          props.talleres.map((item) => (
             <Link
               to={`${item.Id}`}
               class="list-group-item list-group-item-action flex-column align-items-start "
