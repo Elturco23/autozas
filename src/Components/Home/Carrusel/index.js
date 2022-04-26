@@ -11,7 +11,7 @@ function Carousel(props) {
     setTalleres(responseJson);
     
   };
-console.log(Talleres)
+
   useEffect(() => {
     fetchApi();
   }, []);
@@ -37,7 +37,7 @@ console.log(Talleres)
           {!Talleres.length ? (
           <h2>No hay talleres disponibles</h2>
         ) : (Talleres.map((item) => (
-            <div className="container-cartas">
+            <div className="container-cartas" key={item.Id}>
             <img src={item.Logo} height="75px" />
             
             <div className="card-cuerpo">

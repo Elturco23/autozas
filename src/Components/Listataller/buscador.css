@@ -1,21 +1,13 @@
 .container.container-lista{
-    max-width: max-content;
+    max-width: 90%;
 }
 #inputPassword2{
-    width: 47%;
-    margin-left: 20%;
+    width: 50%;
+    margin-left: 25%;
 }
 .form-group{
     display: flex;
     margin: 2% 0 ;
     padding-bottom: 2%;
 }
-.boton-lista-taller {
-    cursor: pointer;
-    color: white;
-    background: rgb(32, 163, 158);
-}
-.boton-lista-taller :hover{
-    background-color: transparent;
-    border-color: transparent;
-}
+
