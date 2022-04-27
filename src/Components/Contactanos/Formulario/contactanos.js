@@ -1,6 +1,46 @@
-import React from "react";
+import React,{useState} from "react";
 import "./contactanos.css";
-function contactanos() {
+
+function Contactanos() {
+ const [Nombre,setNombre]=useState("");
+ const [Correo,setCorreo]=useState("");
+ const [Telefono,setTelefono]=useState("");
+ const [Descripcion,setDescripcion]=useState("");
+  
+  const handleChangeNombre =e=>{
+    setNombre(e.target.value);
+    
+  }
+  const handleChangeCorreo =e=>{
+    setCorreo(e.target.value);
+    
+  }
+  const handleChangeTelefono =e=>{
+    setTelefono(e.target.value);
+    
+  }
+  const handleChangeDescripcion =e=>{
+    setDescripcion(e.target.value);
+    
+  }
+async  function EnviarConsulta(e){
+    const url = "http://localhost:3001/consulta";
+    const response = await fetch(url,{
+      method:'POST',
+      body:{
+        nombre:Nombre,
+        correo:Correo,
+        telefono:Telefono,
+        descripcion:Descripcion
+      },
+      headers:{
+        'Content-Type': 'application/json'
+      }
+      
+    });
+    const responseJson = await response.json();
+
+  }
   return (
     <>
       <div className="container-principal-formulario">
@@ -20,6 +60,8 @@ function contactanos() {
               placeholder="Nombre Completo"
               aria-label="Username"
               aria-describedby="basic-addon1"
+              value={Nombre}
+              onChange={handleChangeNombre}
             />
           </div>
 
@@ -30,6 +72,8 @@ function contactanos() {
               placeholder="Correo Electronico"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
+              value={Correo}
+              onChange={handleChangeCorreo}
             />
             <span className="input-group-text" id="basic-addon2">
               @example.com
@@ -42,6 +86,8 @@ function contactanos() {
               placeholder="Telefono"
               aria-label="Username"
               aria-describedby="basic-addon1"
+              value={Telefono}
+              onChange={handleChangeTelefono}
             />
           </div>
           <h3
@@ -59,10 +105,10 @@ function contactanos() {
               className="form-control"
               id="textAreaExample"
               rows="4"
+              value={Descripcion}
+              onChange={handleChangeDescripcion}
             ></textarea>
-            <label className="form-label" >
-              Añade tu consulta
-            </label>
+            
           </div>
           <button
             type="button"
@@ -77,6 +123,7 @@ function contactanos() {
               border: "none",
               margin: "5% 0",
             }}
+            onClick={EnviarConsulta}
           >
             Enviar Mensaje
           </button>
@@ -86,4 +133,4 @@ function contactanos() {
   );
 }
 
-export default contactanos;
+export default Contactanos;
