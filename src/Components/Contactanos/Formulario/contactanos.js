@@ -20,7 +20,7 @@ function Contactanos() {
     setDescripcion(e.target.value);
   };
   async function EnviarConsulta(e) {
-    const url = "http://localhost:3001/consulta";
+    const url = "https://thawing-cliffs-11679.herokuapp.com/consulta";
     const response = await fetch(url, {
       method: "POST",
       body: JSON.stringify({
