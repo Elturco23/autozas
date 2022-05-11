@@ -1,45 +1,45 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./contactanos.css";
 
 function Contactanos() {
- const [Nombre,setNombre]=useState("");
- const [Correo,setCorreo]=useState("");
- const [Telefono,setTelefono]=useState("");
- const [Descripcion,setDescripcion]=useState("");
-  
-  const handleChangeNombre =e=>{
+  const [Nombre, setNombre] = useState("");
+  const [Correo, setCorreo] = useState("");
+  const [Telefono, setTelefono] = useState("");
+  const [Descripcion, setDescripcion] = useState("");
+
+  const handleChangeNombre = (e) => {
     setNombre(e.target.value);
-    
-  }
-  const handleChangeCorreo =e=>{
+  };
+  const handleChangeCorreo = (e) => {
     setCorreo(e.target.value);
-    
-  }
-  const handleChangeTelefono =e=>{
+  };
+  const handleChangeTelefono = (e) => {
     setTelefono(e.target.value);
-    
-  }
-  const handleChangeDescripcion =e=>{
+  };
+  const handleChangeDescripcion = (e) => {
     setDescripcion(e.target.value);
-    
-  }
-async  function EnviarConsulta(e){
+  };
+  async function EnviarConsulta(e) {
     const url = "http://localhost:3001/consulta";
-    const response = await fetch(url,{
-      method:'POST',
-      body:{
-        nombre:Nombre,
-        correo:Correo,
-        telefono:Telefono,
-        descripcion:Descripcion
+    const response = await fetch(url, {
+      method: "POST",
+      body: JSON.stringify({
+        nombre: Nombre,
+        correo: Correo,
+        telefono: Telefono,
+        descripcion: Descripcion,
+      }),
+      headers: {
+        "Content-Type": "application/json",
       },
-      headers:{
-        'Content-Type': 'application/json'
-      }
-      
     });
     const responseJson = await response.json();
-
+    setCorreo("");
+    setNombre("");
+    setDescripcion("");
+    setTelefono("");
+    window.alert('Consulta enviada correctamente')
+ 
   }
   return (
     <>
@@ -108,7 +108,6 @@ async  function EnviarConsulta(e){
               value={Descripcion}
               onChange={handleChangeDescripcion}
             ></textarea>
-            
           </div>
           <button
             type="button"
