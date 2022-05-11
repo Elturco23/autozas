@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react';
 import AliceCarousel from "react-alice-carousel";
 import './carrusel.css'
 function Carousel(props) {
-    const url = "http://localhost:3001/talleres";
+    const url = "https://thawing-cliffs-11679.herokuapp.com/talleres";
   const [Talleres, setTalleres] = useState([]);
 
   const fetchApi = async () => {

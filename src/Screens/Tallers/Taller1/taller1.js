@@ -16,8 +16,8 @@ function Taller() {
   const params = useParams();
   const { taller } = params;
  
-  const url1 = `http://localhost:3001/talleres/${taller}`;
-  const url2 = `http://localhost:3001/catalogo/${taller}`;
+  const url1 = `https://thawing-cliffs-11679.herokuapp.com/talleres/${taller}`;
+  const url2 = `https://thawing-cliffs-11679.herokuapp.com/catalogo/${taller}`;
   console.log(url1);
   console.log(url2);
   const [Taller, setTaller] = useState([]);

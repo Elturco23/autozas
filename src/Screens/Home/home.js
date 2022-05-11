@@ -11,7 +11,7 @@ import { Fab } from "@mui/material";
 import AddIcon from "@mui/icons-material/WhatsApp";
 
 function Home() {
-  const url = "http://localhost:3001/talleres";
+  const url = "https://thawing-cliffs-11679.herokuapp.com/talleres";
   const [Talleres, setTalleres] = useState([]);
 
   const fetchApi = async () => {
