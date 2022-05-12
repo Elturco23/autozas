@@ -9,7 +9,7 @@ function Catalogo(props) {
     >
       <h2>Catalogo</h2>
       {!props.catalogo ? (
-        <h2>No existe ningun catalogo</h2>
+        <h2>No existe ningun catalogo para este Taller</h2>
       ) : (
         props.catalogo.map((item) => (
           <Accordion.Item eventKey={item.eventKey}>
