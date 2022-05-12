@@ -1,5 +1,6 @@
 
 import './App.css';
+import React from 'react';
 import Home from './Screens/Home/home';
 import ListaTaller from './Screens/ListaTalleres/listataller';
 import Taller1 from './Screens/Tallers/Taller1/taller1';
