@@ -18,9 +18,9 @@ export default function Footer() {
                         </ul>
                         <hr className='separador-footer'/>
                         <div className='redes-sociales'>
-                         <img src={iconfacebook} className='icon-face'/>
-                         <img src={iconinstagram} className='icon-insta'/>
-                         <img src={iconwhatsapp}className='icon-what'/>
+                         <img src={iconfacebook} className='icon-face' alt="description of image"/>
+                         <img src={iconinstagram} className='icon-insta' alt="description of image"/>
+                         <img src={iconwhatsapp}className='icon-what' alt="description of image"/>
                          
 
                         </div>

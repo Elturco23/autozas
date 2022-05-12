@@ -9,7 +9,7 @@ function publicidad() {
         <h2>Proximamente App Movíl</h2>
         <div className='container-principal-publicidad-1'>
              <div className='publicidad1'>
-<img src={Phone} height='370px'/>
+<img src={Phone} height='370px' alt="description of image"/>
             </div>
             <div className='publicidad2'>
             

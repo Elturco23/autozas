@@ -7,7 +7,7 @@ function navbar() {
     return (
         <Navbar className='sticky-top' expand="lg" style={{backgroundColor:"#20A39E"}}>
         <Container fluid>
-          <Navbar.Brand href="/"><img src={logo} height='80px'/></Navbar.Brand>
+          <Navbar.Brand href="/"><img src={logo} height='80px' alt="description of image"/></Navbar.Brand>
           
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

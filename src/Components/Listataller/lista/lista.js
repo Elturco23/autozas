@@ -26,7 +26,7 @@ function Talleres(props) {
                 <img
                   src={item.Logo}
                   height="150px"
-                  
+                  alt="description of image"
                   className="mb-1"
                 />
                 <div className="textos-talleres">
@@ -40,6 +40,7 @@ function Talleres(props) {
                     className="logo-autozas-lista-taller"
                     src={logo1}
                     height="60px"
+                    alt="description of image"
                   />
                 </small>
               </div>

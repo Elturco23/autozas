@@ -13,17 +13,17 @@ function cards() {
         <h3 className='subtitulo-bienvenida-home'>"Tu solución eficaz"</h3>
         <div className='principal-card'>
         <div className="card-1">
-        <img src={iconwhat}/>
+        <img src={iconwhat} alt="description of image"/>
         
-        <div className="card-body">
-        <hr className='separador'/>
+        <div className="card-body" alt="description of image">
+        <hr className='separador' />
           <h5 className="card-title">Contacto</h5>
           <p className="card-text">Contactanos de manera rapida vía whatsapp</p>
          
         </div>
       </div>
       <div className="card-1">
-      <img src={location}/>
+      <img src={location} alt="description of image"/>
         <div className="card-body">
         <hr className='separador'/>
           <h5 className="card-title">Localización</h5>
@@ -32,7 +32,7 @@ function cards() {
         </div>
       </div>
       <div className="card-1">
-      <img src={taller}/>
+      <img src={taller} alt="description of image"/>
         <div className="card-body">
         <hr className='separador'/>
           <h5 className="card-title">Variedad de talleres</h5>
@@ -43,7 +43,7 @@ function cards() {
       </div>
       <div className='principal-card'>
         <div className="card-1">
-        <img src={time}/>
+        <img src={time} alt="description of image"/>
         <div className="card-body">
         <hr className='separador'/>
           <h5 className="card-title">Ahorro de tiempo</h5>
@@ -52,7 +52,7 @@ function cards() {
         </div>
       </div>
       <div className="card-1">
-      <img src={conocimiento}/>
+      <img src={conocimiento} alt="description of image"/>
         <div className="card-body">
         <hr className='separador'/>
           <h5 className="card-title">Conocimiento de los talleres</h5>
@@ -61,7 +61,7 @@ function cards() {
         </div>
       </div>
       <div className="card-1">
-      <img src={catalogo}/>
+      <img src={catalogo} alt="description of image"/>
         <div className="card-body">
         <hr className='separador'/>
           <h5 className="card-title">Catalogo de los Talleres</h5>

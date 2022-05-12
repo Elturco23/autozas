@@ -38,7 +38,7 @@ function Carousel(props) {
           <h2>No hay talleres disponibles</h2>
         ) : (Talleres.map((item) => (
             <div className="container-cartas" key={item.Id}>
-            <img src={item.Logo} height="75px" />
+            <img src={item.Logo} height="75px" alt="description of image" />
             
             <div className="card-cuerpo">
               
