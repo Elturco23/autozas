@@ -2,7 +2,7 @@
 /* global google */
 import React, { useEffect, useState } from "react";
 import "./mapa.css";
-import { useLoadScript, GoogleMap, Marker, InfoWindow } from "@react-google-maps/api";
+import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import IconMap from "../../../img/Home/mecanica.png";
 import IconMapUser from "../../../img/Home/location.png";
 function Home(props) {
@@ -53,11 +53,12 @@ function Home(props) {
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       function (position) {
-        // console.log(position);
+        console.log(position);
         setPosition({
           longitude: position.coords.longitude,
           latitude: position.coords.latitude,
         });
+        filtrar(position.coords.latitude, position.coords.longitude);
       },
       function (error) {
         console.error("Error Code = " + error.code + " - " + error.message);
@@ -66,7 +67,8 @@ function Home(props) {
         enableHighAccuracy: true,
       }
     );
-    filtrar(11.016390832834377, -74.79541053098521);
+  
+   
   }, []);
 
   return !isLoaded || !Talleres.length ? (
@@ -74,7 +76,7 @@ function Home(props) {
   ) : (
     <div className="container-mapa">
       <h1 style={{ marginTop:'5%',marginBottom: "5%" }}>Talleres Cercanos a ti</h1>
-      <Map Talleres={Talleres} />
+      <Map Talleres={Talleres} Positionactual={Position} />
     </div>
   );
 }
@@ -84,10 +86,10 @@ function Map(props) {
   ) : (
     <GoogleMap
       zoom={16}
-      center={{ lat: 11.016390832834377, lng: -74.79541053098521 }}
+      center={{ lat: props.Positionactual.latitude, lng: props.Positionactual.longitude}}
       mapContainerClassName="map-container"
     >
-      <Marker title='Tu Locación Actual 'position={{ lat: 11.016390832834377, lng: -74.79541053098521 }} icon={IconMapUser}/>
+      <Marker title='Tu Locación Actual 'position={{ lat: props.Positionactual.latitude, lng: props.Positionactual.longitude }} icon={IconMapUser}/>
       {props.Talleres.map((item) => {
         return (
           <Marker

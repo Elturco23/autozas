@@ -28,7 +28,7 @@ function Carousel(props) {
      </> :
         <div>
             <AliceCarousel autoPlay
-          autoPlayInterval="1500"
+          autoPlayInterval="1000"
           infinite
           buttonsDisabled={true}
           disableButtonsControls={true}
