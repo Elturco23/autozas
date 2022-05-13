@@ -61,7 +61,7 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^3.1.4",
+    "@iconify/react": "^3.2.1",
     "@types/leaflet": "^1.7.9",
     "gh-pages": "^4.0.0"
   }
