@@ -5,7 +5,7 @@ import './portada.css';
 function portada() {
     return (
         <div className='container-portada'>
-           <img src={Portada} height="100%" width="100%" alt="description of image"/>
+           <img src={Portada} height="100%" width="100%" />
            
            
         </div>

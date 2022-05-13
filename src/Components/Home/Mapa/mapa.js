@@ -1,15 +1,15 @@
 /* eslint-disable no-undef */
-/* global google */
+
 import React, { useEffect, useState } from "react";
 import "./mapa.css";
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import IconMap from "../../../img/Home/mecanica.png";
 import IconMapUser from "../../../img/Home/location.png";
 function Home(props) {
-  const { isLoaded } = useLoadScript({
+  const { isLoaded,loadError } = useLoadScript({
     googleMapsApiKey: "AIzaSyDTSboVvI6MN2qeP89lrSldb17uSWJ3kxY",
   });
-
+console.log(isLoaded);
   const [Talleres, setTalleres] = useState([]);
   const [Position, setPosition] = useState({
     longitude: 0,
@@ -71,7 +71,7 @@ function Home(props) {
    
   }, []);
 
-  return !isLoaded || !Talleres.length ? (
+  return !isLoaded ?(
     <div>Loading...</div>
   ) : (
     <div className="container-mapa">
