@@ -6,12 +6,13 @@
   background-color: #dcd6f7;
   margin-bottom: 10%;
   height: 100%;
+  padding-bottom: 4%;
 }
 .container-principal-publicidad > h2 {
   padding-top: 3%;
   text-align: center;
   letter-spacing: 4px;
-  margin-bottom: 2%;
+ 
   font-weight: bold;
   color: #2b2d42;
   font-size: 38px;
@@ -132,10 +133,10 @@
   }
 }
 
-@media (min-width: 280px) and (max-width:389px) {
+@media (min-width: 280px) and (max-width:600px) {
   .container-principal-publicidad {
     
-    margin-top: 8%;
+    margin-top: 100%;
   }
   .publicidad1 img {
     margin: 0 35%;
@@ -167,11 +168,9 @@ font-size: 15px;
   }
   .container-principal-publicidad-1{
     margin: 0 3%;
+    align-items: center;
   }
 }
 @media (min-width: 390px) and (max-width:400px) {
-  .container-principal-publicidad {
-    
-    margin-top: 8%;
-  }
+ 
 }

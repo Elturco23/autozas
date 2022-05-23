@@ -1,15 +1,20 @@
 /* eslint-disable no-undef */
-
+/* global google */
 import React, { useEffect, useState } from "react";
 import "./mapa.css";
-import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
+import {
+  useLoadScript,
+  GoogleMap,
+  Marker,
+  InfoWindow,
+} from "@react-google-maps/api";
 import IconMap from "../../../img/Home/mecanica.png";
 import IconMapUser from "../../../img/Home/location.png";
 function Home(props) {
-  const { isLoaded,loadError } = useLoadScript({
+  const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyDTSboVvI6MN2qeP89lrSldb17uSWJ3kxY",
   });
-console.log(isLoaded);
+
   const [Talleres, setTalleres] = useState([]);
   const [Position, setPosition] = useState({
     longitude: 0,
@@ -53,12 +58,12 @@ console.log(isLoaded);
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       function (position) {
-        console.log(position);
+        // console.log(position);
+        filtrar(position.coords.latitude, position.coords.longitude);
         setPosition({
           longitude: position.coords.longitude,
           latitude: position.coords.latitude,
         });
-        filtrar(position.coords.latitude, position.coords.longitude);
       },
       function (error) {
         console.error("Error Code = " + error.code + " - " + error.message);
@@ -68,15 +73,16 @@ console.log(isLoaded);
       }
     );
   
-   
   }, []);
 
-  return !isLoaded ?(
+  return !isLoaded || !Position ? (
     <div>Loading...</div>
   ) : (
     <div className="container-mapa">
-      <h1 style={{ marginTop:'5%',marginBottom: "5%" }}>Talleres Cercanos a ti</h1>
-      <Map Talleres={Talleres} Positionactual={Position} />
+      <h1 style={{ marginTop: "5%", marginBottom: "5%" }}>
+        Talleres Cercanos a ti
+      </h1>
+      <Map Talleres={Talleres} position={Position}/>
     </div>
   );
 }
@@ -86,27 +92,25 @@ function Map(props) {
   ) : (
     <GoogleMap
       zoom={16}
-      center={{ lat: props.Positionactual.latitude, lng: props.Positionactual.longitude}}
+      center={{ lat: props.position.latitude, lng: props.position.longitude }}
       mapContainerClassName="map-container"
     >
-      <Marker title='Tu Locación Actual 'position={{ lat: props.Positionactual.latitude, lng: props.Positionactual.longitude }} icon={IconMapUser}/>
+      
+      <Marker
+        title="Tu Locación Actual "
+        position={{ lat: props.position.latitude, lng: props.position.longitude }}
+        icon={IconMapUser}
+      />
       {props.Talleres.map((item) => {
         return (
           <Marker
             key={item.Id}
             position={{ lat: Number(item.Latitud), lng: Number(item.Longitud) }}
             title={item.Nombre}
-            icon={IconMap} 
-            
-            
-          >
-          
-            
-          
-            </Marker>
+            icon={IconMap}
+          />
         );
       })}
-      )
     </GoogleMap>
   );
 }

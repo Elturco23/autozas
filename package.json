@@ -1,6 +1,5 @@
 {
   "name": "autozas",
-  "homepage": "https://Elturco23.github.io/autozas",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,6 +32,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.2.2",
     "react-scripts": "^5.0.1",
+    "uuid": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

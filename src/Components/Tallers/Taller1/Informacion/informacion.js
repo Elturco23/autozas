@@ -24,9 +24,9 @@ function informacion(props) {
       </div>
       <div className="contacto-taller1">
         <h6 className="h6-taller">Comunícate con nosotros</h6>
-        <button>
-          <img src={iconCall} alt="description of image" /> LLAMAR
-        </button>
+        <div style={{display:"flex", justifyContent:"center", marginTop:"5%"}}>
+          <img src={iconCall} alt="description of image" /> <h6>{props.phonee}</h6>
+        </div>
       </div>
     </div>
   );

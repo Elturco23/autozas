@@ -7,8 +7,7 @@ import Carousel from "../../Components/Home/Carrusel/carrusel";
 import Portada from "../../Components/Home/Portada/portada";
 import Mapa from "../../Components/Home/Mapa/mapa";
 import Publicidad from "../../Components/Home/Publicidad/publicidad";
-import { Fab } from "@mui/material";
-import AddIcon from "@mui/icons-material/WhatsApp";
+
 
 function Home() {
   const url = "https://thawing-cliffs-11679.herokuapp.com/talleres";
@@ -37,13 +36,7 @@ function Home() {
     </div>):(
     <>
       <div className="container-principal-home">
-        <Fab color="primary" aria-label="add">
-          <AddIcon />
-          <div className="radar"></div>
-          <div className="radar"></div>
-          <div className="radar"></div>
-          <div className="radar"></div>
-        </Fab>
+        
         <Navbar />
         <Portada />
         <div className="componentes-home">

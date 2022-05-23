@@ -8,7 +8,7 @@ function Catalogo(props) {
       className="container-acordion-catalogo-taller1"
     >
       <h2>Catalogo</h2>
-      {!props.catalogo ? (
+      {!props.catalogo.length ? (
         <h2>No existe ningun catalogo para este Taller</h2>
       ) : (
         props.catalogo.map((item) => (

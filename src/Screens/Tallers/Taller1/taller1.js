@@ -10,7 +10,7 @@ import Catalogo from "../../../Components/Tallers/Taller1/Catalogo/catalogo";
 import { useParams } from "react-router-dom";
 import "./taller1.css";
 
-let name, portad, log, tipo, direccio, urlubicacio,valoracio
+let name, portad, log, tipo, direccio, urlubicacio,valoracio,phone
 
 function Taller() {
   const params = useParams();
@@ -41,7 +41,7 @@ function Taller() {
 }, []);
    
   for (let i = 0; i < Taller.length; i++) {
-   let {Nombre, Portada, Logo, Tipos, Direccion, Urlubicacion,Valoracion}=Taller[i]
+   let {Nombre, Portada, Logo, Tipos, Direccion, Urlubicacion,Valoracion,Telefono}=Taller[i]
    name=Nombre
    portad=Portada
    log=Logo
@@ -49,19 +49,14 @@ function Taller() {
    direccio=Direccion
    urlubicacio=Urlubicacion
   valoracio=Valoracion
+  phone=Telefono
   }
  
 
   return (
     <>
       <div className="container-principal-taller">
-        <Fab color="primary" aria-label="add">
-          <AddIcon />
-          <div className="radar"></div>
-          <div className="radar"></div>
-          <div className="radar"></div>
-          <div className="radar"></div>
-        </Fab>
+        
         <Navbar />
         <Portada portada={portad} />
         <Informacion
@@ -70,6 +65,7 @@ function Taller() {
           tiposervicio={tipo}
           direccion={direccio}
           valoracion={valoracio}
+          phonee={phone}
         />
         <div className="mapa-and-catalogo">
           <MapaT1 url={urlubicacio} />

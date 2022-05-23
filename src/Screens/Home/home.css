@@ -7,7 +7,7 @@
     margin: 0 5%;
    
 }
-.MuiButtonBase-root.MuiFab-root.MuiFab-circular.MuiFab-sizeLarge.MuiFab-primary.css-1suf56w-MuiButtonBase-root-MuiFab-root{
+#boton-flotante{
     position: fixed;
     top: 88vh;
     right: 4vh;

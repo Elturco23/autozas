@@ -49,10 +49,11 @@ font-size: 36px;
   }
 }
 
-@media(max-width:415px) {
+@media(max-width:416px) {
 .container-carousel{
   height: 60vh;
   margin: 51% 0 0 0;
+  padding-top: 95%;
 }
 .carousel-wr1apper h2{
   font-size: 30px;
@@ -64,4 +65,11 @@ font-size: 36px;
 .container-carousel{
 margin-top: 50%;
 }
+}
+@media(min-width:390px) and (max-width:415px) {
+  .container-carousel{
+    height: 60vh;
+    margin: 51% 0 0 0;
+    padding-top: 480px;
+  }
 }
