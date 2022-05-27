@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import AliceCarousel from "react-alice-carousel";
+import { Link } from 'react-router-dom';
 import './carrusel.css'
 function Carousel(props) {
     const url = "https://thawing-cliffs-11679.herokuapp.com/talleres";
@@ -38,6 +39,7 @@ function Carousel(props) {
           <h2>No hay talleres disponibles</h2>
         ) : (Talleres.map((item) => (
             <div className="container-cartas" key={item.Id}>
+              <Link to={`lista-taller/${item.Id}`}>
             <img src={item.Logo} height="75px" alt="description of image" />
             
             <div className="card-cuerpo">
@@ -47,6 +49,7 @@ function Carousel(props) {
               
               
             </div>
+            </Link>
           </div>
           )
           )
